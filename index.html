@@ -9,10 +9,10 @@
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
   :root {
-    --bg: #f5f0e8;
-    --fg: #1a1510;
-    --accent: #b5451b;
-    --muted: #d6cfc3;
+    --bg: #ffffff;
+    --fg: #0a0a0a;
+    --accent: #e8a020;
+    --muted: #e0e0e0;
     --font: "Cascadia Mono", "Courier New", monospace;
   }
 
@@ -106,7 +106,7 @@
     font-family: var(--font);
     transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .drawer-close:hover { background: var(--accent); color: var(--bg); border-color: var(--accent); }
+  .drawer-close:hover { background: var(--accent); color: #0a0a0a; border-color: var(--accent); }
 
   .mobile-drawer a.drawer-link {
     font-size: clamp(2rem, 10vw, 3rem); letter-spacing: -0.02em;
@@ -238,10 +238,10 @@
   .marquee-track { display: flex; animation: marquee 18s linear infinite; white-space: nowrap; }
   .marquee-item {
     font-size: 0.6rem; letter-spacing: 0.35em; text-transform: uppercase;
-    padding: 0 2.5rem; color: var(--bg);
+    padding: 0 2.5rem; color: #0a0a0a;
     display: flex; align-items: center; gap: 2.5rem; opacity: 0.9;
   }
-  .marquee-item span { color: var(--bg); font-size: 0.9rem; opacity: 0.6; }
+  .marquee-item span { color: #0a0a0a; font-size: 0.9rem; opacity: 0.6; }
 
   /* MENU */
   #menu { padding: 7rem 3rem; }
@@ -265,7 +265,7 @@
   }
   .menu-nav-item:last-child { border-right: none; }
   .menu-nav-item:hover { opacity: 1; }
-  .menu-nav-item.active { opacity: 1; color: var(--bg); background: var(--accent); }
+  .menu-nav-item.active { opacity: 1; color: #0a0a0a; background: var(--accent); }
 
   .menu-section { margin-bottom: 6rem; }
   .menu-section:last-child { margin-bottom: 0; }
@@ -296,7 +296,7 @@
   .menu-item:hover .item-name,
   .menu-item:hover .item-price,
   .menu-item:hover .item-desc,
-  .menu-item:hover .item-num { color: var(--bg); }
+  .menu-item:hover .item-num { color: #0a0a0a; }
   .menu-item:hover .item-num { opacity: 0.6; }
   .menu-item > * { position: relative; z-index: 1; }
   .item-num { font-size: 0.55rem; letter-spacing: 0.3em; opacity: 0.25; margin-bottom: 1.5rem; transition: opacity 0.3s, color 0.3s; }
@@ -371,7 +371,7 @@
     .menu-item:active .item-name,
     .menu-item:active .item-price,
     .menu-item:active .item-desc,
-    .menu-item:active .item-num { color: var(--bg); }
+    .menu-item:active .item-num { color: #0a0a0a; }
     #visit { grid-template-columns: 1fr; padding: 4rem 1.5rem; gap: 3rem; }
     footer { padding: 2rem 1.5rem; flex-direction: column; gap: 0.8rem; text-align: center; }
   }
@@ -422,8 +422,8 @@
       <defs>
         <path id="circle" d="M 70,70 m -52,0 a 52,52 0 1,1 104,0 a 52,52 0 1,1 -104,0"/>
       </defs>
-      <text font-family="Cascadia Mono, monospace" font-size="10.5" fill="#b5451b" letter-spacing="6">
-        <textPath href="#circle">kaduppam ✦ kaduppam ✦</textPath>
+      <text font-family="Cascadia Mono, monospace" font-size="10.5" fill="#e8a020" letter-spacing="6">
+        <textPath href="#circle">kaduppam cafe ✦ kaduppam cafe ✦</textPath>
       </text>
     </svg>
     <div class="spin-text-inner">✦</div>
